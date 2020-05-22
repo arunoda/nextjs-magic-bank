@@ -6,7 +6,10 @@ export default function Home() {
 
   function loginNow() {
     const email = prompt('Enter your email');
-    auth.login(email);
+    
+    if (email) {
+      auth.login(email);
+    }
   }
 
   function getContent() {
